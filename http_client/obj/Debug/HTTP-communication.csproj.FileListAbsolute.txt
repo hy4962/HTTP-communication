@@ -1,0 +1,13 @@
+C:\Users\Administrator\Desktop\HTTP-communication\http_client\bin\Debug\http_client.exe.config
+C:\Users\Administrator\Desktop\HTTP-communication\http_client\bin\Debug\http_client.exe
+C:\Users\Administrator\Desktop\HTTP-communication\http_client\bin\Debug\http_client.pdb
+C:\Users\Administrator\Desktop\HTTP-communication\http_client\bin\Debug\ReaLTaiizor.dll
+C:\Users\Administrator\Desktop\HTTP-communication\http_client\bin\Debug\ReaLTaiizor.xml
+C:\Users\Administrator\Desktop\HTTP-communication\http_client\obj\Debug\HTTP-communication.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\HTTP-communication\http_client\obj\Debug\http_client.Form1.resources
+C:\Users\Administrator\Desktop\HTTP-communication\http_client\obj\Debug\http_client.Properties.Resources.resources
+C:\Users\Administrator\Desktop\HTTP-communication\http_client\obj\Debug\HTTP-communication.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\HTTP-communication\http_client\obj\Debug\HTTP-communication.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\HTTP-communication\http_client\obj\Debug\HTTP-com.D0E728E4.Up2Date
+C:\Users\Administrator\Desktop\HTTP-communication\http_client\obj\Debug\http_client.exe
+C:\Users\Administrator\Desktop\HTTP-communication\http_client\obj\Debug\http_client.pdb

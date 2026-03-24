@@ -1,0 +1,13 @@
+D:\C\C#\test\http_client\http_client\bin\Debug\http_client.exe.config
+D:\C\C#\test\http_client\http_client\bin\Debug\http_client.exe
+D:\C\C#\test\http_client\http_client\bin\Debug\http_client.pdb
+D:\C\C#\test\http_client\http_client\bin\Debug\ReaLTaiizor.dll
+D:\C\C#\test\http_client\http_client\bin\Debug\ReaLTaiizor.xml
+D:\C\C#\test\http_client\http_client\obj\Debug\http_client.csproj.AssemblyReference.cache
+D:\C\C#\test\http_client\http_client\obj\Debug\http_client.Form1.resources
+D:\C\C#\test\http_client\http_client\obj\Debug\http_client.Properties.Resources.resources
+D:\C\C#\test\http_client\http_client\obj\Debug\http_client.csproj.GenerateResource.cache
+D:\C\C#\test\http_client\http_client\obj\Debug\http_client.csproj.CoreCompileInputs.cache
+D:\C\C#\test\http_client\http_client\obj\Debug\http_cli.35C33537.Up2Date
+D:\C\C#\test\http_client\http_client\obj\Debug\http_client.exe
+D:\C\C#\test\http_client\http_client\obj\Debug\http_client.pdb
