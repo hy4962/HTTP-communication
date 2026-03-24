@@ -18,7 +18,7 @@ using System.Windows.Forms;
 //messagebox是错误的，跨了线程了，应该用Invoke回到UI线程处理状态，还没改
 
 
-
+//测试
 
 namespace http_client
 {
