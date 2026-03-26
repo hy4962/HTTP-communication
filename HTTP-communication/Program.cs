@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace http_client
+namespace HTTP_communication
 {
     internal static class Program
     {

@@ -1,4 +1,4 @@
-﻿namespace http_client
+﻿namespace HTTP_communication
 {
     partial class Form1
     {
@@ -455,6 +455,7 @@
             this.btn_StopServer.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btn_StopServer.UseAccentColor = false;
             this.btn_StopServer.UseVisualStyleBackColor = true;
+            this.btn_StopServer.Click += new System.EventHandler(this.btn_StopServer_Click);
             // 
             // rtb_Receive_Server
             // 
@@ -513,6 +514,7 @@
             this.btn_SendUTF8_ToClient.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btn_SendUTF8_ToClient.UseAccentColor = false;
             this.btn_SendUTF8_ToClient.UseVisualStyleBackColor = true;
+            this.btn_SendUTF8_ToClient.Click += new System.EventHandler(this.btn_SendUTF8_ToClient_Click);
             // 
             // btn_SendASCII_ToClient
             // 

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace http_client.Properties
+namespace HTTP_communication.Properties
 {
 
 

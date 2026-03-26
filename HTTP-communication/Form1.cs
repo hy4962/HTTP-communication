@@ -18,7 +18,7 @@ using System.Windows.Forms;
 //messagebox是错误的，跨了线程了，应该用Invoke回到UI线程处理状态，还没改
 
 
-namespace http_client
+namespace HTTP_communication
 {
     public partial class Form1 : MaterialForm
     {
@@ -29,6 +29,12 @@ namespace http_client
 
         public Socket SocketClient;//声明一个Socket对象
         bool isConnected = false; // 连接状态标志
+      
+        
+        
+        
+        
+        
         /// <summary>
         /// 连接服务器
         /// </summary>
@@ -117,7 +123,7 @@ namespace http_client
 
                 if (length > 0)
                 {
-                    string data = Encoding.UTF8.GetString(buffer);
+                    string data = Encoding.UTF8.GetString(buffer,0,length);
 
 
                     Invoke(new Action(() =>
@@ -176,7 +182,7 @@ namespace http_client
 
 
         //////////////////////////////////////////////////////////////////////////////////////
-        //////////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////以下服务端///////////////////////////////////////////
         //////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -185,8 +191,10 @@ namespace http_client
         //保存当前在线的客户端列表（字典）
         public Dictionary<string,Socket>CurrentClientsList = new Dictionary<string,Socket>();
        
-        
-        
+
+
+
+
         /// <summary>
         /// 开启服务
         /// </summary>
@@ -223,14 +231,13 @@ namespace http_client
                 
             
             }
-
             //可以连接十个设备
             SocketServer.Listen(10);
 
+
             Task.Run(new Action(() =>
             {
-
-                ListenClient();
+                    ListenClient();
             }));
 
 
@@ -240,9 +247,11 @@ namespace http_client
         public void ListenClient()
         {
             while (true)
-            {
+            { 
+
+
                 //等待客户端连接，并返回一个新的 Socket 对象，用于与该客户端进行通信
-                Socket socketClient = SocketServer.Accept();
+                 Socket socketClient = SocketServer.Accept();
                 //获取客户端的信息
                 string client = socketClient.RemoteEndPoint.ToString();
 
@@ -289,7 +298,7 @@ namespace http_client
         }
 
         /// <summary>
-        /// 循环监听客户端发送的消息，并且显示在服务端的接收框中
+        /// 将接收到的数据显示在服务端的接收框中
         /// </summary>
         public void ReceiveClient(Socket Client)
         {
@@ -300,12 +309,19 @@ namespace http_client
 
                 int length = -1;
 
+                string ClientIP = Client.RemoteEndPoint.ToString();
+
                 try
                 {
                     length = Client.Receive(buffer);
                 }
                 catch (Exception ex)
                 {
+                    
+                    //移除客户端
+                    CurrentClientsList.Remove(ClientIP);
+                    //更新列表框
+                    UpdateClientListBox(ClientIP, 0);
                     MessageBox.Show(ex.Message);
 
                     ////通过 Invoke 回到 UI 线程处理状态
@@ -321,7 +337,7 @@ namespace http_client
 
                 if (length > 0)
                 {
-                    string data = Encoding.UTF8.GetString(buffer);
+                    string data = Encoding.UTF8.GetString(buffer, 0, length);
 
 
                     Invoke(new Action(() =>
@@ -339,6 +355,62 @@ namespace http_client
 
 
         }
+
+
+
+        /// <summary>
+        /// 关闭服务
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btn_StopServer_Click(object sender, EventArgs e)
+        {
+            SocketServer.Close();
+            toolStripStatusLabel3.Text = "已关闭服务";
+            toolStripStatusLabel3.BackColor = Color.Yellow;
+        }
+
+
+        /// <summary>
+        /// 给全部/指定客户端发送UTF8数据
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btn_SendUTF8_ToClient_Click(object sender, EventArgs e)
+        {
+            byte[] data = Encoding.UTF8.GetBytes(tb_SendToClient.Text.Trim());
+
+
+
+            //如果没有选中客户端，则全部客户端都发送，如果选中了客户端，则只发送给选中的客户端
+            if (listBox1.SelectedItem == null)
+            { 
+                foreach (var item in listBox1.Items)
+                {
+                    string client = item.ToString();
+                    CurrentClientsList[client]?.Send(data);
+                }
+            }
+            else
+            {
+                foreach (var item in listBox1.SelectedItems)
+                {
+                    string client = item.ToString();
+                    CurrentClientsList[client]?.Send(data);
+                }
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+
 
 
 

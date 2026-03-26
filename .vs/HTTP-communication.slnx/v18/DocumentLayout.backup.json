@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{2B8F2324-E738-4AF7-8995-A7663C8AC691}|HTTP-communication\\HTTP-communication.csproj|solutionrelative:http-communication\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{2B8F2324-E738-4AF7-8995-A7663C8AC691}|HTTP-communication\\HTTP-communication.csproj|c:\\users\\administrator\\desktop\\http-communication\\http-communication\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2B8F2324-E738-4AF7-8995-A7663C8AC691}|HTTP-communication\\HTTP-communication.csproj|solutionrelative:http-communication\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2B8F2324-E738-4AF7-8995-A7663C8AC691}|HTTP-communication.csproj|C:\\Users\\Administrator\\Desktop\\HTTP-communication\\http-communication\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2B8F2324-E738-4AF7-8995-A7663C8AC691}|HTTP-communication.csproj|solutionrelative:http-communication\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -22,11 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\HTTP-communication\\HTTP-communication\\Form1.cs",
+              "RelativeDocumentMoniker": "HTTP-communication\\Form1.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\HTTP-communication\\HTTP-communication\\Form1.cs",
+              "RelativeToolTip": "HTTP-communication\\Form1.cs",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAUwMAAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T08:54:21.416Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -77,17 +91,8 @@
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\HTTP-communication\\HTTP-communication\\Form1.cs",
-              "RelativeDocumentMoniker": "HTTP-communication\\Form1.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\HTTP-communication\\HTTP-communication\\Form1.cs",
-              "RelativeToolTip": "HTTP-communication\\Form1.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T08:54:21.416Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
@@ -98,11 +103,23 @@
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\HTTP-communication\\HTTP-communication\\Form1.cs [\u8BBE\u8BA1]",
               "RelativeToolTip": "HTTP-communication\\Form1.cs [\u8BBE\u8BA1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T08:54:20.183Z"
+              "WhenOpened": "2026-03-26T05:55:50.822Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Form1.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\HTTP-communication\\HTTP-communication\\Form1.cs",
+              "RelativeDocumentMoniker": "HTTP-communication\\Form1.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\HTTP-communication\\HTTP-communication\\Form1.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "HTTP-communication\\Form1.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T08:54:20.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "packages.config",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\HTTP-communication\\HTTP-communication\\packages.config",
               "RelativeDocumentMoniker": "HTTP-communication\\packages.config",
